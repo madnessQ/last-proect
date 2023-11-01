@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.header__content{
+    padding-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__nav-list{
+    list-style: none;
+    display: flex;
+    column-gap: 40px;
+}
+.header__content-btn{
+    padding: 17px 57px;
+    border-radius: 5px;
+    border: 2px solid #263238;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+.header__list-item a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+}
+.header__logo-title{
+    font-size: 36px;
+}
+.header__logo-title span{
+    color: #939393;
+}
+
+.home__content{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.home__info-title{
+    font-size: 64px;
+}
+.home__info-text{
+    max-width: 532px;
+    color: #8F95A5;
+    font-size: 24px;
+    margin: 40px 0px 62px 0px;
+}
+.home__info-btn{
+    padding: 32px 117px;
+    border-radius: 15px;
+    background: #263238;
+    font-size: 36px;
+    color: white;
+}
+.aboutus__content{
+    display: flex;
+    justify-content: space-between;
+}
+.aboutus__info-title{
+    font-size: 48px;
+}
+.aboutus__info-text{
+    color: #8F95A5;
+    font-size: 20px;
+    max-width: 635px;
+    margin: 23px 0px;
+}
+.contacts__content{
+    margin-top: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+.contacts__info-title{
+    font-size: 48px;
+}
+.contacts__info-text{
+    color: #8F95A5;
+    font-size: 20px;
+    max-width: 776px;
+    margin: 32px 0px 67px 0px;
+}
+.contact-input{
+    padding: 25px 33px;
+    display: inline-block;
+    width: 450px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #8F95A5;
+}
+.contact-btn{
+    border-radius: 10px;
+    background: #263238;
+    padding: 25px 71px;
+    font-size: 20px;
+    color: white;
+}
+
+.footer__content{
+    border-top: 1px solid #C4C4C4;
+    padding-top: 31px;
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    padding: 15px;
+    border: 1px solid black;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 435px);
+    gap: 20px;
+}
+.grid-container div:first-child{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    height: 894px;  
+}
+.grid-container div:nth-child(2){
+    height: 531px;
+    grid-column: 2/3;
+}
+.grid-container div:nth-child(3){
+    height: 531px;
+    grid-column: 3/4;
+}
+.grid-container div:last-child{
+    height: 344px;
+    grid-column: 2/4;
+    grid-row:2/3;
+}
+
+.home__info-title{
+    position: relative;
+    left: -700px;
+    animation-name: title-to-right;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes title-to-right {
+    0%{
+        left: -700px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+.home__info-text{
+    position: relative;
+    left: -700px;
+    animation-name: info-text;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes info-text {
+    0%{
+        left: -700px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+.home__content-img{
+    position: relative;
+    right: -700px;
+    animation-name: content-img;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes content-img {
+    0%{
+        right: -700px;
+    }
+    100%{
+        right: 0px;
+    }
+
+}
+.aboutus__info-title{
+    position: relative;
+    left: -700px;
+    animation-name:info-title ;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes info-title {
+    0%{
+        left: -700px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+.aboutus__info-text{
+display: flex;
+    position: relative;
+    left: -700px;
+    animation-name: info-text ;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes info-text{
+    0%{
+        left: -700px;
+    }
+    100%{
+        left: 0px;
+    }
+}
